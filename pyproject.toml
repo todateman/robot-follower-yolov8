@@ -1,0 +1,48 @@
+[project]
+name = "robot-follower-yolov8"
+version = "1.0.0"
+description = "Robot Follower with YOLOv8 and ROS 2 Humble"
+authors = [
+    {name = "Ahmad Idris Yakubu"},
+]
+license = {text = "BSD-3-Clause"}
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "ultralytics>=8.3.0",
+    "numpy==1.24.2",  # ROS 2 Humble compatibility
+    "opencv-python>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[project.urls]
+Homepage = "https://github.com/ahmadidrisyakubu/robot-follower-yolov8"
+Repository = "https://github.com/ahmadidrisyakubu/robot-follower-yolov8"
+"Bug Tracker" = "https://github.com/ahmadidrisyakubu/robot-follower-yolov8/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+]

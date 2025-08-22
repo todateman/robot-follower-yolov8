@@ -1,0 +1,6 @@
+# Minimal requirements for robot-follower-yolov8
+# These are the main packages - dependencies will be automatically installed
+
+ultralytics==8.3.184
+numpy==1.24.2
+opencv-python==4.11.0.86

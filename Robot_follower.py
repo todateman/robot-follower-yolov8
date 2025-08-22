@@ -59,9 +59,9 @@ class PersonDistanceCalculator(Node):
         self.cmd_vel_pub = self.create_publisher(Twist, "/cmd_vel", 2)  # For robot velocity commands
 
         # Subscribe to depth image, RGB image, and camera info topics
-        self.depth_sub = self.create_subscription(Image, '/camera/depth/image_raw', self.depth_callback, 2)
-        self.rgb_sub = self.create_subscription(Image, '/camera/color/image_raw', self.rgb_callback, 2)
-        self.info_sub = self.create_subscription(CameraInfo, '/camera/color/camera_info', self.camera_info_callback, 2)
+        self.depth_sub = self.create_subscription(Image, '/camera/camera/depth/image_rect_raw', self.depth_callback, 2)
+        self.rgb_sub = self.create_subscription(Image, '/camera/camera/color/image_raw', self.rgb_callback, 2)
+        self.info_sub = self.create_subscription(CameraInfo, '/camera/camera/color/camera_info', self.camera_info_callback, 2)
 
         # Log that all subscriptions and publishers are set up
         self.get_logger().info("Subscriptions and Publishers initialized")
