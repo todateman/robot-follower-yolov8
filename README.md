@@ -35,7 +35,7 @@ This project includes several dependency files for different use cases:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/ahmadidrisyakubu/robot-follower-yolov8.git
+git clone https://github.com/todateman/robot-follower-yolov8.git
 cd robot-follower-yolov8
 ```
 
